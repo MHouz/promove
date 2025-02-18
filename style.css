@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+ :root{
+    --color:red;
+ }
+body{
+    background-color: #F7F7F7;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.chrati{
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: solid 0px;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    padding: 0.5px;
+    color: #007BFF;
+    transition: 0.25s;
+    
+}
+
+
+.nav-center{
+    max-width: 1170px;
+    margin: auto;
+}
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    overflow: hidden;
+
+}
+.chrati:hover{
+    color:#FF4500;
+    font-size: 1.45rem;
+}
+.hero{
+    background-color:#007BFF ;
+    height: calc(100vh - 62px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    color: whitesmoke;
+    cursor: default;
+    overflow: hidden;
+}
+.hero h1{
+    
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 6px;
+    transition: 0.25s;
+    color: whitesmoke;
+    animation: dkhla 1s ;
+    
+
+
+}
+.hero button{
+    width: 13rem;
+    padding:1rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; ;
+    text-transform: uppercase;
+    
+    background-color: transparent;
+    outline: none;
+    border: solid whitesmoke 3px;
+    color: whitesmoke;
+    font-weight: 500;
+    letter-spacing: 4px;
+    transition: 0.25s;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: botoni 1s ease-out;
+    transition: 0.25s;
+    
+
+
+}
+.hero button:hover{
+    background-color: whitesmoke;
+    color: #FF4500;
+    font-weight: bold;
+    
+}
+.hero p{
+    max-width:100%;
+    transition: 1s;
+    
+
+}
+.hero h1:hover{
+    color: #FF4500;
+}
+@keyframes dkhla{
+    from{transform: translateX(-500px);opacity: 0;}
+
+}
+@keyframes lkhrja{
+    from{opacity: 0;  
+    
+
+}
+
+}
+.navlinkss{
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    gap: 10px;
+    background-color: #222;
+    width:400px ;
+    height: 40vh;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+    
+}
+.navlinkss a{
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #007BFF;
+    text-transform: capitalize;
+    
+    
+}
+.m7tajo{
+    text-align: center;
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    animation: lkhrja 1.5s ;
+    
+}
+@keyframes botoni {
+    from{transform: translateX(500px);opacity: 0;
+        text-align: center;}
+}
+.nav-header img{
+    animation: lkhrja 1.5s ;
+
+}
+.nav-header img:active{
+    animation: dkhla 1s;
+}
+.navlinks{
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+
+}
+.navlinks a{
+    
+    
+    
+    transition: 0.5s;
+    border-bottom: solid #F7F7F7 2px;
+    color: #007BFF;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navlinkse{
+    position: fixed;
+    z-index: 999;
+    width: 300px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    justify-content:space-around ;
+    align-items: flex-start;
+    float:left;
+    top: 0;
+    right: 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: 1s;
+
+
+}
+.navlinkse a{
+    transition: 0.25s;
+    color: #FF4500;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+    
+    padding: 10px;
+}
+@media (min-width:800px){
+    .chrati{
+        display: none;
+    }
+   
+    
+}
+.navlinkse{
+    
+    opacity: 0;
+    transform: translateX(500px);
+
+}
+@media (max-width:800px){
+    .navlinks{
+        display: none;
+    }
+
+
+}
+.navlinkse a:hover{
+    background-color: #222;
+    color: whitesmoke;
+
+}
+.navlinks a:hover{
+    border-bottom: solid #007BFF 2px;
+    color: #FF4500;
+}
+.navlinks a:focus{
+    border-bottom: solid #007BFF 2px;
+    color: #FF4500;
+    scale: 0.9;
+    overflow-x: hidden;
+}
+

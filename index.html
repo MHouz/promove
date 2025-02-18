@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Backroads</title>
+</head>
+<body >
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="images/promovelogo.png" alt="logo" width="90">
+                    
+                    <div class="navlinks">
+                       
+                        <a href="#">home</a><a href="#">about</a><a href="#">sevices</a><a href="#">featured</a><a href="#">gallery</a>
+                    </div>
+                    <button class="chrati" onclick=showme()>
+                        |||
+                    </button>
+                    <div class="navlinkse" id="navi">
+                       
+                        <a href="#"onclick=hideme()>home</a><a href="#"onclick=hideme()>about</a><a href="#"onclick=hideme()>sevices</a><a href="#"onclick=hideme()>featured</a><a href="#"onclick=hideme()>gallery</a>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </nav>
+    </header>
+    
+    <div class="hero" onclick= hideme()>
+        <h1 >follow your passion</h1>
+        <div class="m7tajo"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, est! Possimus reiciendis consequatur corporis. Corporis?</p></div>
+        <a href="#"><button>Explore more</button></a>
+    </div>
+    <script>
+        navi=document.getElementById("navi");
+        function showme(){
+            navi.style.opacity="1";
+            navi.style.transform="translateX(0px)";
+        }
+        function hideme(){
+            navi.style.opacity="0";
+            navi.style.transform="translateX(500px)";
+        }
+    </script>
+</body>
+</html>
